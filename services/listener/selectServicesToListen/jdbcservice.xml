@@ -1,0 +1,4 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sql>select distinct(fs.service_id) from feature_services fs join feature_configurations fc on fc.feature_service_id = fs.id
+where fc.condition is not null</sql>
+</jdbcService>

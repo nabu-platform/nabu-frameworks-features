@@ -1,0 +1,81 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="9989c02e2030449ebefb7db61f80f568"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="e654c822a6dd4ad3b17fde9218e20de0"
+			label="input/serviceId != null"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="e2c31549e25f4a59a1f4655e75a7c651"
+				serviceId="nabu.misc.auditing.Services.unauditService"
+				resultName="resultc3e8cf5856d64a5898ee17a99a5bce39"
+				temporaryMapping="true"
+				x="266"
+				y="193"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e489b5a0eacd4e678e66062688c9f6bc"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>nabu.frameworks.features.services.tracker</from>
+				<to>auditServiceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="a8762b64b3244cd38b92308fd751704e"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>false</from>
+				<to>recursive</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="1436e802d9da489fa66b5ed661936d26"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/serviceId</from>
+				<to>serviceId</to>
+			</steps>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Catch"
+			disabled="false"
+			id="6371124936a1409b9ebf55985a7fe1be"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				disabled="false"
+				id="558581d37c944ad5b0afc25effe89c66"
+				lineNumber="4">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+					disabled="false"
+					id="dc1fe71255da4f66a12fdaf986275ac2"
+					serviceId="nabu.utils.Server.log"
+					resultName="result6029514499cf47e0a45da2827254c6c5"
+					temporaryMapping="true"
+					x="47"
+					y="116"
+					invocationOrder="0"
+					asynchronous="false"
+					recache="false">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="7633517b92194cf1979191d4051b4480"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>="Can not stop tracking service: " + input/serviceId</from>
+					<to>message</to>
+				</steps>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

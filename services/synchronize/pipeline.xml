@@ -1,0 +1,17 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field minOccurs="0" name="connectionId" type="java.lang.String"/>
+    </structure>
+    <structure name="output"/>
+    <structure definition="nabu.utils.types.FeatureDescription" maxOccurs="unbounded" minOccurs="0" name="features"/>
+    <structure collectionName="featureConfigurations" definition="nabu.frameworks.features.crud.featureConfiguration.types.output" maxOccurs="unbounded" minOccurs="0" name="existingConfigurations"/>
+    <structure collectionName="featureDefinitions" definition="nabu.frameworks.features.crud.featureDefinition.types.output" maxOccurs="unbounded" minOccurs="0" name="existingFeatures"/>
+    <structure collectionName="featureArtifacts" definition="nabu.frameworks.features.crud.featureArtifact.types.output" maxOccurs="unbounded" minOccurs="0" name="existingArtifacts"/>
+    <structure collectionName="featureDefinitions" definition="nabu.frameworks.features.crud.featureDefinition.types.output" minOccurs="0" name="existingFeature"/>
+    <structure collectionName="featureArtifacts" definition="nabu.frameworks.features.crud.featureArtifact.types.output" minOccurs="0" name="existingArtifact"/>
+    <structure collectionName="featureConfigurations" definition="nabu.frameworks.features.crud.featureConfiguration.types.output" minOccurs="0" name="existingConfiguration"/>
+    <structure collectionName="featureConfigurations" definition="nabu.frameworks.features.crud.featureConfiguration.types.output" maxOccurs="unbounded" minOccurs="0" name="usedConfigurations"/>
+    <structure collectionName="featureArtifacts" definition="nabu.frameworks.features.crud.featureArtifact.types.output" maxOccurs="unbounded" minOccurs="0" name="usedArtifacts"/>
+    <structure collectionName="featureConfigurations" definition="nabu.frameworks.features.crud.featureConfiguration.types.output" maxOccurs="unbounded" minOccurs="0" name="unusedConfigurations"/>
+    <structure collectionName="featureArtifacts" definition="nabu.frameworks.features.crud.featureArtifact.types.output" maxOccurs="unbounded" minOccurs="0" name="unusedArtifacts"/>
+</structure>

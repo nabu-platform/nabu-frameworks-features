@@ -1,0 +1,57 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="b545990e1d5c4ceb837dde094ce5329b"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="fc7b9da2f19e46f3a457e15f1c4afbb5"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="edd2f042befc462ab2fd2abbe6045b9a"
+				serviceId="nabu.frameworks.features.startup.pushGlobal"
+				resultName="result16a9f153c7634724be59ffe2600b9010"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="4d759c0a8ba748f1af5e19e43fb33cf3"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="6ffcfa64cbf74a87a35668a04075ae39"
+				serviceId="nabu.frameworks.features.startup.registerListeners"
+				resultName="result72f766c65d4c4d9bbb9e851f58d26f44"
+				temporaryMapping="true"
+				x="30"
+				y="30"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			features="DEV"
+			id="33db8149b2354cc58bbe4d8f36ff63ab"
+			lineNumber="4">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="bfc2eb32520e444dbd3c08a4dda65639"
+				serviceId="nabu.frameworks.features.startup.synchronizeAll"
+				resultName="resulted7fd4da5768441295670ebb9adcb14d"
+				temporaryMapping="true"
+				x="176"
+				y="89"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+		</steps>
+	</steps>
+</sequence>

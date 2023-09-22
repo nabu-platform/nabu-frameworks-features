@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataModel>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.features.database.types.featureConfiguration</type>
+        <x>959</x>
+        <y>161</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.features.database.types.featureDefinition</type>
+        <x>276</x>
+        <y>97</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.frameworks.features.database.types.featureArtifact</type>
+        <x>274</x>
+        <y>293</y>
+    </entries>
+</dataModel>

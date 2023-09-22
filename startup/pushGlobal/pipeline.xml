@@ -1,0 +1,6 @@
+<structure name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <field maxOccurs="unbounded" name="connectionIds" type="java.lang.String"/>
+    <structure collectionName="featureDefinitions" definition="nabu.frameworks.features.crud.featureDefinition.types.output" maxOccurs="unbounded" minOccurs="0" name="featuresWithDefault"/>
+</structure>

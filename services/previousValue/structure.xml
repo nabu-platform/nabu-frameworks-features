@@ -1,0 +1,4 @@
+<structure name="previousValue">
+    <field name="feature" type="java.lang.String"/>
+    <field name="previousValue" type="java.lang.Boolean"/>
+</structure>

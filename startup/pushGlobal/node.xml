@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2023-09-22T18:45:19.771+02:00" lastModified="2023-09-22T18:47:52.345+02:00" leaf="true" version="6">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.features.services.getSupportedConnections</references>
+    <references>java.lang.String</references>
+    <references>nabu.frameworks.features.crud.featureDefinition.types.output</references>
+    <references>nabu.utils.Feature.toggleGlobal</references>
+    <references>nabu.frameworks.features.crud.featureDefinition.services.list</references>
+</node>

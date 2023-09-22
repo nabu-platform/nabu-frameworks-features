@@ -1,0 +1,31 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="b494b55074cc4bfa85ff8485a074d63e"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="9c27459210b943af9f72b6ec15e1ec88"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="1456dbdea9e84b28b14f0855eb55c650"
+				serviceId="nabu.utils.Server.log"
+				resultName="resultfbf634aff69c4f30b5b3ed0b50a4e0a4"
+				temporaryMapping="true"
+				x="188"
+				y="177"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="74b97348f8274b3ca1a94894bc21d855"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>Calling the feature configurator!</from>
+				<to>message</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.frameworks.features.crud.featureConfiguration</webFragments>
+    <webFragments>nabu.frameworks.features.manage.rest.feature.apply</webFragments>
+    <webFragments>nabu.frameworks.features.manage.rest.service.available</webFragments>
+    <webFragments>nabu.frameworks.features.manage.rest.feature.available</webFragments>
+    <webFragments>nabu.frameworks.features.manage.rest.feature.scan</webFragments>
+    <webFragments>nabu.frameworks.features.crud.featureArtifact</webFragments>
+    <webFragments>nabu.frameworks.features.crud.featureDefinition</webFragments>
+</webModule>

@@ -1,0 +1,7 @@
+<structure collectionName="featureConfigurations" name="featureConfiguration">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field foreignKey="nabu.frameworks.features.database.types.featureArtifact:id" name="featureArtifactId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field foreignKey="nabu.frameworks.features.database.types.featureDefinition:id" name="featureDefinitionId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="If no condition is filled in, nothing is done to the feature (neither enabled nor disabled)" minOccurs="0" name="condition" type="java.lang.String"/>
+    <field comment="Additional comment you want to set here, for example why you are overriding the default" minOccurs="0" name="description" type="java.lang.String"/>
+</structure>

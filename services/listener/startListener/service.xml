@@ -1,0 +1,81 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="3070d1ac9bb3492cb6af79e6ed87718a"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="7c2592492971499a9f1d083a48e22091"
+			label="input/serviceId != null"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="256c81fb0aee4f2aab87bde2be693d4b"
+				serviceId="nabu.misc.auditing.Services.auditService"
+				resultName="resultecbb693207534939ac6792e148aa887d"
+				temporaryMapping="true"
+				x="278"
+				y="87"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="5edf4f28037a45c59d340ffb2634ba87"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>nabu.frameworks.features.services.tracker</from>
+				<to>auditServiceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="5504c0605a8e455fa34f2a6f6585de70"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>false</from>
+				<to>recursive</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e817999f8732474486ea560d17ad2b74"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/serviceId</from>
+				<to>serviceId</to>
+			</steps>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Catch"
+			disabled="false"
+			id="db63d7e108674966939fb8698f0c37bb"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+				disabled="false"
+				id="558581d37c944ad5b0afc25effe89c66"
+				lineNumber="4">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+					disabled="false"
+					id="dc1fe71255da4f66a12fdaf986275ac2"
+					serviceId="nabu.utils.Server.log"
+					resultName="result6029514499cf47e0a45da2827254c6c5"
+					temporaryMapping="true"
+					x="47"
+					y="116"
+					invocationOrder="0"
+					asynchronous="false"
+					recache="false">
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="7633517b92194cf1979191d4051b4480"
+						mask="false"
+						optional="false"
+						fixedValue="true">
+					<from>="Can not track service: " + input/serviceId</from>
+					<to>message</to>
+				</steps>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

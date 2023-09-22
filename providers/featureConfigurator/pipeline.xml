@@ -1,0 +1,4 @@
+<structure interface="be.nabu.eai.repository.api.FeatureProviderService.features" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+</structure>
