@@ -110,12 +110,21 @@
 					recache="false">
 				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 						disabled="false"
-						id="ce062ad0c7f44967be7bfca36d62431d"
+						id="a408c06be3ee4effa921ca869a5cc196"
 						mask="false"
 						optional="false"
 						fixedValue="false">
-					<from>result144a3db217a448f4b7505dc849a28b12/results/serviceId</from>
+					<from>result144a3db217a448f4b7505dc849a28b12/results/artifactId</from>
 					<to>objects</to>
+				</steps>
+				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+						disabled="false"
+						id="68fcb56a64244cb5aba0065fca01308d"
+						mask="false"
+						optional="false"
+						fixedValue="false">
+					<from>toBeAudited</from>
+					<to>list</to>
 				</steps>
 			</steps>
 			<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"

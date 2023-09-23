@@ -94,6 +94,15 @@
 						<from>connectionId</from>
 						<to>connectionId</to>
 					</steps>
+					<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+							disabled="false"
+							id="f2bf5af987304f4c857813931d712004"
+							mask="false"
+							optional="false"
+							fixedValue="true">
+						<from>true</from>
+						<to>filter/hasCondition</to>
+					</steps>
 				</steps>
 				<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 						disabled="false"
