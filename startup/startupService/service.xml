@@ -37,7 +37,8 @@
 		</steps>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
-			disabled="false"
+			comment="Too much overhead..."
+			disabled="true"
 			features="DEV"
 			id="33db8149b2354cc58bbe4d8f36ff63ab"
 			lineNumber="4">
