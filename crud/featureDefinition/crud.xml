@@ -42,6 +42,7 @@
     <restLimitToUser>true</restLimitToUser>
     <updatePermission>feature.manage</updatePermission>
     <updateRole>$user</updateRole>
+    <useAsAuthorizationServiceContext>false</useAsAuthorizationServiceContext>
     <useExplicitLanguage>false</useExplicitLanguage>
     <useGlobalPermissionContext>true</useGlobalPermissionContext>
     <useLanguage>false</useLanguage>

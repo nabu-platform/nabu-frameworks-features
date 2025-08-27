@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.startup.StartupServiceManager" created="2025-08-04T11:49:20.530+02:00" lastModified="2025-08-26T12:21:59.818+02:00" leaf="true" version="4">
+    <environmentId>ares</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>nabu.frameworks.features.startup.synchronizeAll</references>
+</node>

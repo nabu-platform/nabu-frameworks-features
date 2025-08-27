@@ -2,5 +2,5 @@
     <structure name="input"/>
     <structure name="output"/>
     <field maxOccurs="unbounded" name="connectionIds" type="java.lang.String"/>
-    <structure collectionName="featureDefinitions" definition="nabu.frameworks.features.crud.featureDefinition.types.output" maxOccurs="unbounded" minOccurs="0" name="featuresWithDefault"/>
+    <structure collectionName="featureDefinitions" definition="nabu.frameworks.features.crud.featureDefinition.types.output" enricher="nabu.frameworks.features.crud.featureDefinition.services.list" maxOccurs="unbounded" minOccurs="0" name="featuresWithDefault" persister="nabu.frameworks.features.crud.featureDefinition.batch.updateAll"/>
 </structure>
